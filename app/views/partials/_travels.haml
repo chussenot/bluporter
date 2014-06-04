@@ -1,13 +1,11 @@
 %script#travels_tpl{type: "x-tmpl-mustache"}
   {{#travels}}
   .item{'data-id'=>'dd4fg7d9d8f7cvh6g67'}
+    .item.ui.button.teal.book Book this travel !
     .content
-      .meta {{departure_date}}
+      .meta departure {{departure_date}}
       .name {{{from.name}}} to {{{to.name}}}
       %p.description {{description}}
-    .item.ui.button.teal.book Book this travel !
-    .miles {{distance}} miles
-    .extra
-      {{places}} places
+      .infos {{distance}} miles - {{places}} places
   {{/travels}}
 .ui.items.travels

@@ -1,0 +1,54 @@
+.ui.sidebar.vertical.menu.left
+  .ui.basic.vertical.accordion.menu
+    %item.results
+      27 Results
+    .item
+      %a.active.title
+        %i.dropdown.icon
+        Teleporter type
+      .active.content.menu
+        .ui.form.item
+          .grouped.inline.fields
+            .field
+              .ui.radio.checkbox
+                %input{name: "size", type: "radio", value: "small"}/
+                %label Small
+            .field
+              .ui.radio.checkbox
+                %input{name: "size", type: "radio", value: "medium"}/
+                %label Medium
+            .field
+              .ui.radio.checkbox
+                %input{name: "size", type: "radio", value: "large"}/
+                %label Large
+            .field
+              .ui.radio.checkbox
+                %input{name: "size", type: "radio", value: "x-large"}/
+                %label X-Large
+            %a.advanced{href:'#'} view more...
+    .item
+      %a.active.title
+        %i.dropdown.icon
+        Price
+      .active.content.menu
+        .ui.form.item
+          .grouped.inline.fields
+            .field
+              .ui.checkbox
+                %input{name: "small", type: "checkbox"}/
+                %label Red
+            .field
+              .ui.checkbox
+                %input{name: "medium", type: "checkbox"}/
+                %label Orange
+            .field
+              .ui.checkbox
+                %input{name: "large", type: "checkbox"}/
+                %label Green
+            .field
+              .ui.checkbox
+                %input{name: "x-large", type: "checkbox"}/
+                %label Blue
+
+      
+      .item.ui.button.teal.search_open Search Again !

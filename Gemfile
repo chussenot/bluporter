@@ -25,6 +25,7 @@ gem 'kaminari'
 gem 'grape'
 gem 'puma'
 gem 'rails_12factor'
+gem 'ffaker'
 
 group :development do
   gem 'spring'
@@ -40,7 +41,6 @@ end
 
 group :development, :test do
   gem 'fabrication'
-  gem 'ffaker'
   gem 'rspec-rails'
   gem 'pry-rails'
 end

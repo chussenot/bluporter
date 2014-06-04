@@ -1,0 +1,25 @@
+{
+  "name": "teleporter",
+  "version": "0.0.0",
+  "authors": [
+    "Clément Hussenot <chussenot@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typeahead.js": "~0.10.2",
+    "jquery": "~2.1.1",
+    "semantic-ui": "~0.17.0",
+    "momentjs": "~2.6.0",
+    "lodash": "~2.4.1",
+    "hypher": "https://github.com/bramstein/hypher.git#v0.2.1",
+    "mustache": "~0.8.1"
+  }
+}

@@ -38,6 +38,7 @@ class Search
       rendered  = Mustache.render($('#travels_tpl').html(), {travels:travels})
       $('.ui.travels').html(rendered)
       $('.description').hyphenate('en-us')
+      $('.item.results').html travels.length + ' results'
       $('.button.book').click ->
         $('.modal.book').modal('show')
 

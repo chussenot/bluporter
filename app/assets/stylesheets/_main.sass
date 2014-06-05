@@ -8,6 +8,7 @@ body
     margin-bottom: 0px
 .ui.sidebar.left
   background-color: #57102C
+  padding-top: 20px
   width: 240px !important
 .ui.top.sidebar
   background-color: #57102C
@@ -18,13 +19,15 @@ body
   @media screen and (max-width: $break-small)
     visibility: hidden
     display: none
-.ui.items
-  padding-top: 5px
+.ui.items.travels
+  padding: 5px 0 0 10px
   > .item
     min-height: 260px
     width: 215px
-.ui.items .item>.content>.name
-  font-size: 1em
-  em
-    color: red
+    >.content>.name
+      font-size: 1em
+      em
+        color: red
+.ui.search_open
+  width: 100%
 

@@ -7,6 +7,6 @@ RSpec.describe User, :type => :model do
   subject { user }
 
   describe 'fields' do
-    it { should have_fields(:email, :nickname).of_type(String) }
+    it { should have_fields(:email, :pseudo).of_type(String) }
   end
 end

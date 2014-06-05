@@ -20,8 +20,6 @@ gem 'kaminari'
 gem 'grape'
 gem 'puma'
 gem 'rails_12factor'
-gem 'ffaker'
-
 
 gem 'sass-rails',                 '~> 4.0.3'
 gem 'compass-rails'
@@ -50,9 +48,9 @@ group :development, :test do
 end
 
 group :test do
+  gem 'ffaker'
   gem 'nokogiri'
   gem 'database_cleaner'
-  gem 'faker'
   gem 'launchy'
   gem 'selenium-webdriver'
   gem 'simplecov'

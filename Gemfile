@@ -11,11 +11,6 @@ def require_if(&block)
 end
 
 gem 'rails',                      '4.0.2'
-gem 'sass-rails',                 '~> 4.0.3'
-gem 'compass-rails'
-gem 'uglifier',                   '>= 1.3.0'
-gem 'coffee-rails',               '~> 4.0.0'
-gem 'haml-rails'
 
 gem 'gaston',                     '~> 0.5'
 gem 'mongoid',                    github: 'mongoid/mongoid'
@@ -26,6 +21,14 @@ gem 'grape'
 gem 'puma'
 gem 'rails_12factor'
 gem 'ffaker'
+
+
+gem 'sass-rails',                 '~> 4.0.3'
+gem 'compass-rails'
+gem 'uglifier',                   '>= 1.3.0'
+gem 'coffee-rails',               '~> 4.0.0'
+gem 'haml-rails'
+
 
 group :development do
   gem 'spring'
@@ -41,7 +44,8 @@ end
 
 group :development, :test do
   gem 'fabrication'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'mongoid-rspec'
   gem 'pry-rails'
 end
 
@@ -52,6 +56,5 @@ group :test do
   gem 'launchy'
   gem 'selenium-webdriver'
   gem 'simplecov'
-  gem 'mongoid-rspec'
 end
 

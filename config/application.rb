@@ -16,5 +16,11 @@ module Bluporter
     # Load Grape API
     config.paths.add File.join('app', 'api'), glob: File.join('**', '*.rb')
     config.autoload_paths += Dir[Rails.root.join('app', 'api', '*')]
+
+    config.generators do |g|
+      g.test_framework      :rspec, fixture: true
+      g.fixture_replacement :fabrication
+    end
+
   end
 end
